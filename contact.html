@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - APEX LUXE MOTORS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .contact-form {
+            background: var(--bg-surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.2);
+        }
+        
+        .contact-info {
+            padding: 2rem 0;
+        }
+        
+        .info-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-gold);
+            color: var(--bg-primary);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 1rem;
+            vertical-align: top;
+        }
+        
+        .info-content h3 {
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-content p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .map-placeholder {
+            background: var(--bg-surface);
+            height: 300px;
+            border-radius: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            margin-top: 2rem;
+        }
+        
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .hours-card {
+            background: var(--bg-surface);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.1);
+            text-align: center;
+        }
+        
+        .hours-title {
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .hours-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">APEX LUXE MOTORS</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="ev-lab.html">EV Lab</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <div class="grid">
+                <h1 class="section-title">CONTACT US</h1>
+                <p class="text-center mb-3" style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 3rem;">
+                    Get in touch with our luxury automotive specialists. We're here to help you find your perfect vehicle 
+                    and provide exceptional service throughout your ownership experience.
+                </p>
+                
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3 class="text-gold mb-2">Send us a Message</h3>
+                        <form>
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" required placeholder="Your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="(555) 123-4567">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Interest</label>
+                                <select>
+                                    <option>General Inquiry</option>
+                                    <option>Vehicle Purchase</option>
+                                    <option>Test Drive Request</option>
+                                    <option>Service Appointment</option>
+                                    <option>Financing Information</option>
+                                    <option>Trade-in Valuation</option>
+                                    <option>Career Opportunities</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Preferred Vehicle Brand</label>
+                                <select>
+                                    <option>No Preference</option>
+                                    <option>Porsche</option>
+                                    <option>Ferrari</option>
+                                    <option>Lamborghini</option>
+                                    <option>McLaren</option>
+                                    <option>Aston Martin</option>
+                                    <option>Bentley</option>
+                                    <option>Electric Vehicles</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div style="display: flex; align-items: flex-start;">
+                                <span class="info-icon">📍</span>
+                                <div class="info-content">
+                                    <h3>Visit Our Showroom</h3>
+                                    <p>1200 Velocity Boulevard<br>
+                                    Automotive District<br>
+                                    Los Angeles, CA 90210</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div style="display: flex; align-items: flex-start;">
+                                <span class="info-icon">📞</span>
+                                <div class="info-content">
+                                    <h3>Call Us</h3>
+                                    <p>Sales: (555) 123-APEX<br>
+                                    Service: (555) 123-4567<br>
+                                    Parts: (555) 123-7890</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div style="display: flex; align-items: flex-start;">
+                                <span class="info-icon">✉️</span>
+                                <div class="info-content">
+                                    <h3>Email Us</h3>
+                                    <p>sales@apexluxemotors.com<br>
+                                    service@apexluxemotors.com<br>
+                                    info@apexluxemotors.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div style="display: flex; align-items: flex-start;">
+                                <span class="info-icon">🕒</span>
+                                <div class="info-content">
+                                    <h3>Business Hours</h3>
+                                    <p>Monday - Friday: 9:00 AM - 8:00 PM<br>
+                                    Saturday: 9:00 AM - 6:00 PM<br>
+                                    Sunday: 11:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <div style="text-align: center;">
+                        <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Interactive Map</h3>
+                        <p>Google Maps integration would be displayed here<br>
+                        showing our luxury showroom location with dark theme styling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--bg-surface);">
+            <div class="grid">
+                <h2 class="section-title">DEPARTMENT HOURS</h2>
+                
+                <div class="hours-grid">
+                    <div class="hours-card">
+                        <div class="hours-title">Sales Department</div>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span><span>9:00 AM - 8:00 PM</span></li>
+                            <li><span>Saturday</span><span>9:00 AM - 6:00 PM</span></li>
+                            <li><span>Sunday</span><span>11:00 AM - 5:00 PM</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <div class="hours-title">Service Department</div>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span><span>7:00 AM - 6:00 PM</span></li>
+                            <li><span>Saturday</span><span>8:00 AM - 4:00 PM</span></li>
+                            <li><span>Sunday</span><span>Closed</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <div class="hours-title">Parts Department</div>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span><span>8:00 AM - 6:00 PM</span></li>
+                            <li><span>Saturday</span><span>8:00 AM - 4:00 PM</span></li>
+                            <li><span>Sunday</span><span>Closed</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <div class="hours-title">EV Lab</div>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span><span>10:00 AM - 7:00 PM</span></li>
+                            <li><span>Saturday</span><span>10:00 AM - 5:00 PM</span></li>
+                            <li><span>Sunday</span><span>12:00 PM - 4:00 PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="grid">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h2 class="section-title">SCHEDULE AN APPOINTMENT</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        Ready to experience luxury automotive excellence? Schedule a private consultation, 
+                        test drive, or service appointment with our expert team.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="#" class="btn">Schedule Test Drive</a>
+                        <a href="#" class="btn-outline btn">Book Service</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">APEX LUXE MOTORS</div>
+            <p class="footer-tagline">Where Performance Meets Perfection</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">F</a>
+                <a href="#" aria-label="Instagram">I</a>
+                <a href="#" aria-label="Twitter">T</a>
+                <a href="#" aria-label="YouTube">Y</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 APEX LUXE MOTORS. All rights reserved. | Luxury Automotive Excellence</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

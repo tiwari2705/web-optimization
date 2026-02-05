@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - APEX LUXE MOTORS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .job-listing {
+            background: var(--bg-surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.1);
+            transition: var(--transition);
+            margin-bottom: 2rem;
+        }
+        
+        .job-listing:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .job-title {
+            color: var(--accent-gold);
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .job-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .job-type {
+            background: var(--accent-gold);
+            color: var(--bg-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .job-description {
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+        
+        .job-requirements {
+            margin: 1rem 0;
+        }
+        
+        .job-requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .job-requirements li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .job-requirements li::before {
+            content: '•';
+            color: var(--accent-gold);
+            position: absolute;
+            left: 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .benefit-item {
+            background: var(--bg-surface);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.1);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .benefit-item:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-title {
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">APEX LUXE MOTORS</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="ev-lab.html">EV Lab</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <div class="grid">
+                <h1 class="section-title">JOIN OUR TEAM</h1>
+                <p class="text-center mb-3" style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 3rem;">
+                    Build your career with the premier luxury automotive retailer. We're looking for passionate individuals 
+                    who share our commitment to excellence and dedication to providing exceptional customer experiences.
+                </p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <div class="benefit-title">Competitive Compensation</div>
+                        <p>Industry-leading salary packages with performance bonuses and commission opportunities.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🏥</div>
+                        <div class="benefit-title">Comprehensive Benefits</div>
+                        <p>Full health, dental, and vision coverage plus retirement planning and life insurance.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📚</div>
+                        <div class="benefit-title">Professional Development</div>
+                        <p>Ongoing training programs, certifications, and career advancement opportunities.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🚗</div>
+                        <div class="benefit-title">Vehicle Programs</div>
+                        <p>Employee vehicle purchase programs and exclusive access to luxury automotive events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--bg-surface);">
+            <div class="grid">
+                <h2 class="section-title">CURRENT OPENINGS</h2>
+                
+                <div style="max-width: 1000px; margin: 0 auto;">
+                    <div class="job-listing">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Luxury Sales Consultant</h3>
+                                <div class="job-meta">Sales Department • Full-time • Los Angeles, CA</div>
+                            </div>
+                            <div class="job-type">Full-time</div>
+                        </div>
+                        <div class="job-description">
+                            <p>We're seeking an experienced luxury sales professional to join our elite sales team. The ideal candidate will have a passion for high-end automobiles and a proven track record in luxury retail sales.</p>
+                        </div>
+                        <div class="job-requirements">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Requirements:</h4>
+                            <ul>
+                                <li>3+ years luxury automotive sales experience</li>
+                                <li>Strong communication and interpersonal skills</li>
+                                <li>Knowledge of luxury vehicle brands and features</li>
+                                <li>Valid driver's license with clean driving record</li>
+                                <li>Bachelor's degree preferred</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn mt-2">Apply Now</a>
+                    </div>
+                    
+                    <div class="job-listing">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Master Technician</h3>
+                                <div class="job-meta">Service Department • Full-time • Los Angeles, CA</div>
+                            </div>
+                            <div class="job-type">Full-time</div>
+                        </div>
+                        <div class="job-description">
+                            <p>Join our world-class service team as a Master Technician specializing in luxury and exotic vehicle maintenance and repair. Work with the latest diagnostic equipment and genuine OEM parts.</p>
+                        </div>
+                        <div class="job-requirements">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Requirements:</h4>
+                            <ul>
+                                <li>ASE Master Certification required</li>
+                                <li>5+ years luxury vehicle service experience</li>
+                                <li>Factory training certifications preferred</li>
+                                <li>Proficiency with diagnostic equipment</li>
+                                <li>Strong attention to detail and quality</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn mt-2">Apply Now</a>
+                    </div>
+                    
+                    <div class="job-listing">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Finance Manager</h3>
+                                <div class="job-meta">Finance Department • Full-time • Los Angeles, CA</div>
+                            </div>
+                            <div class="job-type">Full-time</div>
+                        </div>
+                        <div class="job-description">
+                            <p>Lead our finance department and help clients secure optimal financing solutions for their luxury vehicle purchases. Work with premium lending partners and provide exceptional customer service.</p>
+                        </div>
+                        <div class="job-requirements">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Requirements:</h4>
+                            <ul>
+                                <li>3+ years automotive finance experience</li>
+                                <li>Strong knowledge of lending products</li>
+                                <li>Excellent mathematical and analytical skills</li>
+                                <li>Professional presentation and communication</li>
+                                <li>Finance certifications preferred</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn mt-2">Apply Now</a>
+                    </div>
+                    
+                    <div class="job-listing">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Customer Experience Specialist</h3>
+                                <div class="job-meta">Customer Service • Full-time • Los Angeles, CA</div>
+                            </div>
+                            <div class="job-type">Full-time</div>
+                        </div>
+                        <div class="job-description">
+                            <p>Ensure exceptional customer experiences throughout the ownership journey. Coordinate service appointments, manage client communications, and provide concierge-level support.</p>
+                        </div>
+                        <div class="job-requirements">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Requirements:</h4>
+                            <ul>
+                                <li>2+ years luxury customer service experience</li>
+                                <li>Exceptional communication skills</li>
+                                <li>Strong organizational abilities</li>
+                                <li>Proficiency with CRM systems</li>
+                                <li>Passion for automotive excellence</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn mt-2">Apply Now</a>
+                    </div>
+                    
+                    <div class="job-listing">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">EV Technology Specialist</h3>
+                                <div class="job-meta">EV Lab • Full-time • Los Angeles, CA</div>
+                            </div>
+                            <div class="job-type">Full-time</div>
+                        </div>
+                        <div class="job-description">
+                            <p>Lead our electric vehicle initiatives and educate clients on EV technology. Work with cutting-edge electric luxury vehicles and charging infrastructure.</p>
+                        </div>
+                        <div class="job-requirements">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Requirements:</h4>
+                            <ul>
+                                <li>Degree in Engineering or related field</li>
+                                <li>Knowledge of EV technology and charging systems</li>
+                                <li>Experience with luxury electric vehicles</li>
+                                <li>Strong technical communication skills</li>
+                                <li>Passion for sustainable transportation</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn mt-2">Apply Now</a>
+                    </div>
+                    
+                    <div class="job-listing">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Marketing Coordinator</h3>
+                                <div class="job-meta">Marketing • Full-time • Los Angeles, CA</div>
+                            </div>
+                            <div class="job-type">Full-time</div>
+                        </div>
+                        <div class="job-description">
+                            <p>Support our marketing initiatives and brand development. Create compelling content, manage social media presence, and coordinate luxury automotive events.</p>
+                        </div>
+                        <div class="job-requirements">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Requirements:</h4>
+                            <ul>
+                                <li>Bachelor's degree in Marketing or Communications</li>
+                                <li>2+ years marketing experience</li>
+                                <li>Proficiency with digital marketing tools</li>
+                                <li>Creative content development skills</li>
+                                <li>Knowledge of luxury automotive market</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn mt-2">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="grid">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h2 class="section-title">READY TO JOIN US?</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        Don't see the perfect position? We're always looking for exceptional talent to join our team. 
+                        Send us your resume and let us know how you can contribute to our mission of automotive excellence.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn">Submit Resume</a>
+                        <a href="about.html" class="btn-outline btn">Learn About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">APEX LUXE MOTORS</div>
+            <p class="footer-tagline">Where Performance Meets Perfection</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">F</a>
+                <a href="#" aria-label="Instagram">I</a>
+                <a href="#" aria-label="Twitter">T</a>
+                <a href="#" aria-label="YouTube">Y</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 APEX LUXE MOTORS. All rights reserved. | Luxury Automotive Excellence</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

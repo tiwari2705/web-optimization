@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - APEX LUXE MOTORS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .review-card {
+            background: var(--bg-surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.1);
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .review-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+        
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .review-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        
+        .review-info h4 {
+            color: var(--accent-gold);
+            margin-bottom: 0.25rem;
+        }
+        
+        .review-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .stars {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .star {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+        }
+        
+        .review-text {
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+        
+        .quote-mark {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 3rem;
+            color: var(--accent-gold);
+            opacity: 0.3;
+            font-family: serif;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: var(--bg-surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            font-family: 'Oswald', sans-serif;
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">APEX LUXE MOTORS</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="ev-lab.html">EV Lab</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <div class="grid">
+                <h1 class="section-title">CLIENT TESTIMONIALS</h1>
+                <p class="text-center mb-3" style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 3rem;">
+                    Discover why discerning clients choose APEX LUXE MOTORS for their luxury automotive needs. 
+                    Read authentic reviews from satisfied customers who have experienced our exceptional service.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">4.9</span>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">1,247</span>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--bg-surface);">
+            <div class="grid">
+                <h2 class="section-title">CUSTOMER REVIEWS</h2>
+                
+                <div class="grid-2">
+                    <div class="review-card">
+                        <div class="quote-mark">"</div>
+                        <div class="review-header">
+                            <img src="./Michael Chen.png" alt="Michael Chen" class="review-avatar">
+                            <div class="review-info">
+                                <h4>Michael Chen</h4>
+                                <p>Porsche 911 GT3 Owner</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">
+                            Exceptional service from start to finish. The team at APEX LUXE MOTORS made purchasing my dream car an unforgettable experience. Their attention to detail and personalized approach is unmatched in the industry.
+                        </p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="quote-mark">"</div>
+                        <div class="review-header">
+                            <img src="./Sarah Williams.png" alt="Sarah Williams" class="review-avatar">
+                            <div class="review-info">
+                                <h4>Sarah Williams</h4>
+                                <p>Ferrari F8 Tributo Owner</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">
+                            The concierge service is absolutely incredible. They handled everything from financing to delivery, making the entire process seamless. I couldn't be happier with my Ferrari and the ongoing service support.
+                        </p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="quote-mark">"</div>
+                        <div class="review-header">
+                            <img src="./David Rodriguez.png" alt="David Rodriguez" class="review-avatar">
+                            <div class="review-info">
+                                <h4>David Rodriguez</h4>
+                                <p>McLaren 720S Owner</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">
+                            APEX LUXE MOTORS sets the gold standard for luxury car dealerships. Their expertise, professionalism, and genuine passion for automotive excellence is evident in every interaction. Highly recommended!
+                        </p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="quote-mark">"</div>
+                        <div class="review-header">
+                            <img src="./Emma Thompson.png" alt="Emma Thompson" class="review-avatar">
+                            <div class="review-info">
+                                <h4>Emma Thompson</h4>
+                                <p>Bentley Continental GT Owner</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">
+                            The level of service and attention to detail is extraordinary. From the initial consultation to the delivery of my Bentley, every step was handled with the utmost care and professionalism.
+                        </p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="quote-mark">"</div>
+                        <div class="review-header">
+                            <img src="./James Mitchell.png" alt="James Mitchell" class="review-avatar">
+                            <div class="review-info">
+                                <h4>James Mitchell</h4>
+                                <p>Lamborghini Huracán Owner</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">
+                            Outstanding experience from beginning to end. The team's knowledge of luxury vehicles is impressive, and their commitment to customer satisfaction is unparalleled. My Lamborghini is perfect!
+                        </p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="quote-mark">"</div>
+                        <div class="review-header">
+                            <img src="./Lisa Anderson.png" alt="Lisa Anderson" class="review-avatar">
+                            <div class="review-info">
+                                <h4>Lisa Anderson</h4>
+                                <p>Aston Martin DB11 Owner</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">
+                            The EV Lab experience was fascinating, and the transition to electric luxury has been seamless. The ongoing support and service excellence continues to exceed my expectations every time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="grid">
+                <h2 class="section-title">WHAT SETS US APART</h2>
+                
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="text-gold mb-1">Personalized Service</h3>
+                            <p>Every client receives dedicated attention from our experienced team. We take the time to understand your unique needs and preferences to ensure the perfect match.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="text-gold mb-1">Expert Knowledge</h3>
+                            <p>Our team consists of automotive enthusiasts with deep expertise in luxury and performance vehicles. We provide honest, informed guidance throughout your journey.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="text-gold mb-1">Ongoing Support</h3>
+                            <p>Our relationship doesn't end at delivery. We provide comprehensive after-sales support, maintenance services, and exclusive owner benefits for life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--bg-surface);">
+            <div class="grid">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h2 class="section-title">SHARE YOUR EXPERIENCE</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        We value your feedback and would love to hear about your experience with APEX LUXE MOTORS. 
+                        Your review helps us continue to improve and assists other clients in making informed decisions.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn">Leave a Review</a>
+                        <a href="inventory.html" class="btn-outline btn">View Inventory</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">APEX LUXE MOTORS</div>
+            <p class="footer-tagline">Where Performance Meets Perfection</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">F</a>
+                <a href="#" aria-label="Instagram">I</a>
+                <a href="#" aria-label="Twitter">T</a>
+                <a href="#" aria-label="YouTube">Y</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 APEX LUXE MOTORS. All rights reserved. | Luxury Automotive Excellence</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
